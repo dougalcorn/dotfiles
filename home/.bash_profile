@@ -3,3 +3,6 @@
 if [ -e ~/.bashrc ] ; then
   . ~/.bashrc
 fi
+
+echo ".bash_profile"
+

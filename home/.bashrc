@@ -37,3 +37,10 @@ export CC=clang
 export ALL_TESTS=true
 
 source /opt/boxen/env.sh
+
+# https://github.com/boxen/puppet-bash/issues/1
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+echo ".bashrc"
